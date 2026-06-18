@@ -4,6 +4,14 @@ This repository houses an end-to-end analytics and data pipeline infrastructure 
 
 ---
 
+## 📊 Live Interactive Dashboard
+
+You can explore the fully interactive analytical control center directly on Tableau Public:
+
+👉 **[View the E-Commerce Customer Retention & Churn Control Center](https://public.tableau.com/views/Book1_17815246077530/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
+
+---
+
 ## 🛠️ Project Architecture & Data Flow
 
 The project is structured into three primary operational layers:
@@ -30,7 +38,7 @@ The project is structured into three primary operational layers:
 
 * **`mongo_winback_list.csv`**: A structured analytical output matrix targeting historically churned profiles from the MongoDB environment that require strategic promotional or financial outreach to win back.
 * **`targeted_retention_list.csv`**: An automatically generated active prevention directory containing buyers sitting at extreme churn windows (e.g., zero historical discount usage, active status, but an inactive duration > 60 days) to facilitate proactive retention campaigns.
-* **Tableau Infrastructure Workbook (`.twb`)**: A highly optimized corporate layout connecting back to the analytical pivot data sources, organizing content into:
+* **Tableau Infrastructure Workbook (`Book1.twb`)**: A highly optimized corporate layout connecting back to the analytical pivot data sources, organizing content into:
   * *Sheet 1: The Churn Overview Graph* — Cross-tabulating customer identifiers with behavioral habits such as coupon usage to uncover underlying drop-off trends.
   * *Sheet 2: The Revenue Exposure Graph* — Geographically mapping localized absolute spending margins via interactive bubble charts to spot vulnerable markets.
   * *Dashboard 1: E-Commerce Customer Retention & Churn Control Center* — An interactive control environment featuring mobile device layouts, automated caching, and strict responsive zone mapping for multi-device analytics.
